@@ -1,0 +1,58 @@
+# Python-related
+*.py[cod]
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# FastAPI logs
+*.log
+
+# SQLite database files (if any)
+*.sqlite3
+*.db
+
+# Jupyter Notebook checkpoints (if you use notebooks)
+.ipynb_checkpoints/
+
+# IDE-related files
+.vscode/
+.idea/
+*.swp
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Pipenv files (if using Pipenv)
+Pipfile.lock
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Mypy cache
+.mypy_cache/
+
+# Other Python tools
+pytestdebug.log
+.cache/
+.tox/
+
+# Docker
+docker-compose.override.yml
+
+# Node.js (if using for frontend)
+node_modules/
+dist/
