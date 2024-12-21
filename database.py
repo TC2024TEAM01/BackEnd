@@ -1,7 +1,9 @@
 import pg8000
 from dotenv import load_dotenv
 import os
+from sqlalchemy.ext.declarative import declarative_base
 
+Base = declarative_base()
 # Charger les variables d'environnement
 load_dotenv()
 

@@ -117,3 +117,4 @@ schedule.every().day.at("00:00").do(create_daily_reports)
 while True:
     schedule.run_pending()
     time.sleep(1)
+  
