@@ -118,12 +118,13 @@
 #     return 'pp'
 from fastapi import FastAPI
 from routers import Users
-
+from routers import Conges
 app = FastAPI()
 
  
 # Inclure les routes des utilisateurs
 app.include_router(Users.router)
+app.include_router(Conges.router)
 
 @app.get("/")
 def read_root():
