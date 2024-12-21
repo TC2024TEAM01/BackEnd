@@ -121,10 +121,11 @@ from routers import Users
 
 app = FastAPI()
 
-
+ 
 # Inclure les routes des utilisateurs
 app.include_router(Users.router)
 
 @app.get("/")
 def read_root():
     return {"message": "Bienvenue sur mon API avec FastAPI et PostgreSQL"}
+ 
