@@ -29,6 +29,8 @@ def create_conge(conge: CongeCreate):
         return {"conge_id": conge_id, "message": "Conge créé avec succès"}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+      
+      
 @router.get("/conges")
 def get_conges():
     try:
@@ -52,6 +54,8 @@ def get_conges():
         return {"conges": conges}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+      
+      
 @router.patch("/conges/{conge_id}")
 def update_conge_status(conge_id: int, conge_update: CongeUpdateStatus):
     try:
